@@ -1,0 +1,160 @@
+main {
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+
+.app-wrapper {
+  width: 1383px;
+  height: 941px;
+  background-color: #f0f4f7;
+  margin: 0 auto;
+  position: relative;
+}
+
+.app-container {
+  width: 1300px;
+  height: 819px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/*HEADER*/
+
+.app-header {
+  padding-right: 29px;
+  padding-left: 29px;
+  display: flex;
+  height: 128px;
+  line-height: 128px;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-family: LucidaGrande;
+  font-size: 39px;
+  font-weight: bold;
+  text-align: left;
+  color: #41bf15;
+  text-transform: uppercase;
+}
+
+.app-header .icons-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
+  height: 100%;
+}
+
+.app-header .icons-menu span {
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  padding: 10px;
+}
+
+/*STOCK-LIST*/
+.stock-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*STOCK-ITEMS*/
+.stock-list li {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-between;
+  height: 118px;
+  line-height: 118px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.stock-list li:last-child{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.stock-list li .stock-name {
+  font-family: Avenir;
+  font-size: 33px;
+  font-weight: 300;
+  color: #59737c;
+  height: 100%;
+  width: 465px;
+}
+
+.stock-list li .stock-params{
+  display: flex;
+  align-items: center;
+  width: 315px;
+  justify-content: space-between;
+}
+
+.stock-list li .stock-name .symbol {
+  text-transform: uppercase;
+}
+
+.stock-list li .stock-params .present-value {
+  width: 150px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #ff4f46;
+}
+.stock-list li .stock-params .price{
+  font-family: HelveticaNeueW01-55Roman;
+  font-size: 30px;
+  text-align: left;
+  color: #59737c;
+}
+
+
+.stock-list li .stock-params .present-value span {
+  font-family: Avenir;
+  font-size: 34px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.stock-list li .arrange-btns-bar {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.stock-list li .arrange-btns-bar button {
+  color: #ababab;
+  font-size: 30px;
+  display: block;
+  height: 25px;
+}
+.stock-list li .arrange-btns-bar button:first-child {
+  margin-bottom: 7px;
+}
+.stock-list li:first-child .arrange-btns-bar button.up ,
+.stock-list li:last-child .arrange-btns-bar button.down {
+  color: rgba(171, 171, 171, 0.2);
+}
+
+.stock-list li .arrange-btns-bar > .down {
+  transform: rotate(180deg);
+}
+
