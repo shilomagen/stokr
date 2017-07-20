@@ -9,6 +9,18 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
+  outline: none;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  padding: 0;
+  margin: 0;
 }
 
 .app-wrapper {
@@ -62,12 +74,16 @@ button {
   width: 300px;
   height: 100%;
 }
+.app-header .icons-menu li{
+  display: flex;
+  align-items: center;
+}
 
-.app-header .icons-menu span {
+
+.app-header .icons-menu button {
   width: 40px;
   height: 40px;
   font-size: 35px;
-  padding: 10px;
 }
 
 /*STOCK-LIST*/
@@ -118,8 +134,18 @@ button {
   width: 150px;
   height: 56px;
   border-radius: 10px;
-  background-color: #ff4f46;
 }
+
+.stock-list li .stock-params .present-value.positive{
+  background-color: #63da39;
+}
+
+.stock-list li .stock-params .present-value.negative{
+  background-color: #ff4f46;
+
+
+}
+
 .stock-list li .stock-params .price{
   font-family: HelveticaNeueW01-55Roman;
   font-size: 30px;
@@ -128,7 +154,7 @@ button {
 }
 
 
-.stock-list li .stock-params .present-value span {
+.stock-list li .stock-params .present-value {
   font-family: Avenir;
   font-size: 34px;
   font-weight: 300;
@@ -149,6 +175,7 @@ button {
 .stock-list li .arrange-btns-bar button:first-child {
   margin-bottom: 7px;
 }
+
 .stock-list li:first-child .arrange-btns-bar button.up ,
 .stock-list li:last-child .arrange-btns-bar button.down {
   color: rgba(171, 171, 171, 0.2);
