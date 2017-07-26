@@ -1,6 +1,17 @@
-main {
+@font-face {
+  font-family: "HelveticaNeueW01-55Roma";
+  src: url("../assets/fonts/HelveticaNeueW01-55Roman.eot?#iefix");
+  src: url("../assets/fonts/HelveticaNeueW01-55Roman.eot?#iefix") format("eot"),
+  url("../assets/fonts/HelveticaNeueW01-55Roman.woff") format("woff"),
+  url("../assets/fonts/HelveticaNeueW01-55Roman.ttf") format("truetype"),
+  url("../assets/fonts/HelveticaNeueW01-55Roman.svg#helvetica_neue") format("svg");
 }
 
+main {
+}
+a{
+  all:unset;
+}
 button {
   background: none;
   border: 0;
@@ -11,6 +22,7 @@ button {
   padding: 0;
   outline: none;
 }
+
 
 ul{
   list-style: none;
@@ -42,6 +54,7 @@ li{
   right: 0;
   margin: auto;
   border-radius: 10px;
+  overflow: auto;
 }
 
 /*HEADER*/
@@ -74,17 +87,26 @@ li{
   width: 300px;
   height: 100%;
 }
+
 .app-header .icons-menu li{
   display: flex;
   align-items: center;
 }
 
-
+.app-header .icons-menu{
+  font-size: 35px;
+}
+.app-header .icons-menu a{
+  height: 100%;
+}
 .app-header .icons-menu button {
   width: 40px;
   height: 40px;
-  font-size: 35px;
 }
+.app-header .icons-menu button.active {
+  color: #41bf15;
+}
+
 
 /*STOCK-LIST*/
 .stock-list {
@@ -116,7 +138,7 @@ li{
   font-weight: 300;
   color: #59737c;
   height: 100%;
-  width: 465px;
+  width: 70%;
 }
 
 .stock-list li .stock-params{
@@ -131,7 +153,7 @@ li{
 }
 
 .stock-list li .stock-params .present-value {
-  width: 150px;
+  width: 160px;
   height: 56px;
   border-radius: 10px;
 }
@@ -183,5 +205,62 @@ li{
 
 .stock-list li .arrange-btns-bar > .down {
   transform: rotate(180deg);
+}
+
+.filter-form{
+  display: flex;
+  height: 160px;
+  border-top: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: space-around;
+}
+.filter-form .filter-input{
+  height: 100%;
+  display: flex;
+  width: 85%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.filter-form .input-container{
+  display: flex;
+  align-items: center;
+}
+
+.filter-form .filter-input label{
+  font-size: 26px;
+  color: #59737c;
+  font-family: Avenir;
+  margin-right: 3px;
+  width: 190px;
+
+}
+.filter-form .filter-input select,
+.filter-form .filter-input input {
+  width: 332px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: solid 1px #e0e0e0;
+  font-size: 26px;
+  color: #59737c;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.filter-form .filter-input input:focus{
+  outline: none;
+}
+
+.filter-form .apply-btn button{
+  background-color: #41bf15;
+  border: solid 1px #247906;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: Avenir;
+
 }
 
