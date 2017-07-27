@@ -26,7 +26,8 @@ const ACTIONS={
   },
   SHOW_FILTER_BAR:'show_filter_bar',
   REFRESH:'refresh-stock',
-  APPLY_FILTER: 'apply-filter'
+  APPLY_FILTER: 'apply-filter',
+  CANCEL_SEARCH:'cancel-search'
 };
 
 const VIEWS={
@@ -34,8 +35,16 @@ const VIEWS={
   SEARCH:'search'
 };
 
+const SEARCH={
+  SEARCH_STATUS:{
+    INIT:'init',
+    NO_RESULTS: 'no_results',
+    FOUND:'found'
+  }
+};
 const ENDPOINTS={
-  QUOTES:SERVER_ADDRS+'/quotes?q='
+  QUOTES:SERVER_ADDRS+'/quotes?q=',
+  SEARCH:SERVER_ADDRS+'/search?q='
 };
 
 const DISPLAY_ARRAY=[DISPLAY_VALUES.PERCENTAGE, DISPLAY_VALUES.MCAP, DISPLAY_VALUES.CHANGE];

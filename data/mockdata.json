@@ -24,3 +24,91 @@
     "MCap": "294B"
   }
 ]
+
+{
+  "ResultSet": {
+    "Query": "GOOG",
+    "Result": [
+      {
+        "symbol": "GOOG",
+        "name": "Alphabet Inc.",
+        "exch": "NMS",
+        "type": "S",
+        "exchDisp": "NASDAQ",
+        "typeDisp": "Equity"
+      },
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc.",
+        "exch": "NAS",
+        "type": "S",
+        "exchDisp": "NASDAQ",
+        "typeDisp": "Equity"
+      },
+      {
+        "symbol": "GOOGL-USD.SW",
+        "name": "Alphabet",
+        "exch": "EBS",
+        "type": "S",
+        "exchDisp": "Swiss",
+        "typeDisp": "Equity"
+      },
+      {
+        "symbol": "GOOGL170609C01000000",
+        "name": "GOOGL Jun 2017 call 1000.000",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOG190118C01000000",
+        "name": "GOOG Jan 2019 call 1000.000",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOG170609C00985000",
+        "name": "GOOG Jun 2017 call 985.000",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOG170609C00980000",
+        "name": "GOOG Jun 2017 call 980.000",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOG170609C00982500",
+        "name": "GOOG Jun 2017 call 982.500",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOG170609P00960000",
+        "name": "GOOG Jun 2017 put 960.000",
+        "exch": "OPR",
+        "type": "O",
+        "exchDisp": "OPR",
+        "typeDisp": "Option"
+      },
+      {
+        "symbol": "GOOGL.SN",
+        "name": "Alphabet Inc.",
+        "exch": "SGO",
+        "type": "S",
+        "exchDisp": "Santiago Stock Exchange",
+        "typeDisp": "Equity"
+      }
+    ]
+  }
+}

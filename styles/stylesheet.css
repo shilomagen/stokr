@@ -264,3 +264,91 @@ li{
 
 }
 
+.app-container .input-box{
+  height: 62px;
+  margin: 35px;
+  width: auto;
+  border: solid 1px #408be3;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.app-container .input-box input{
+  height: 75%;
+  width: 90%;
+  border: none;
+  font-size: 26px;
+  outline: none;
+}
+.app-container .input-box button{
+  font-family: Avenir;
+  font-size: 26px;
+  width: 10%;
+  color: #41bf15;
+}
+
+.app-container .search-container{
+  height: 84%;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container .search-container > span:first-child {
+  font-size:250px;
+  color: #D5D5D5;
+}
+
+.app-container .search-container  > span:last-child{
+  font-family: Avenir;
+  font-size: 40px;
+  color: #868686;
+
+}
+
+.search-container .search-results {
+  width: 100%;
+  height: 100%;
+}
+
+.search-container .search-results > li.stock-item{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.search-container .search-results > li.stock-item .stock-name{
+  font-family: Avenir;
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.search-container .search-results > li.stock-item .stock-name span:first-child{
+  color: #607982;
+  margin-right: 30px;
+}
+
+
+.search-container .search-results > li.stock-item .add-stock{
+  width: 69px;
+  height: 56px;
+}
+.search-container .search-results > li.stock-item .add-stock button{
+  width: 100%;
+  height: 100%;
+  background-color: #41bf15;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+}

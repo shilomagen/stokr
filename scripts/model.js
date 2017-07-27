@@ -5,12 +5,13 @@
     constructor() {
       this._appState = {
         uiState: {
+          appName: 'stokr',
           displayVal: DISPLAY_VALUES.PERCENTAGE,
-          showFilterBar: true,
+          showFilterBar: false,
           view: VIEWS.GENERAL,
-          filters:{}
+          filters:{},
+          search:{}
         },
-        appName: 'stokr',
         stocks: [],
         myStocks: [
           "WIX",
